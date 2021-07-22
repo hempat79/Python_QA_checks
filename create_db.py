@@ -23,7 +23,7 @@ def main():
     # create a database connection
     db = utils.utils()
     db.create_connection()
-    print(db.cursor)
+    #print(db.cursor)
 
     # create tables
     if db.cursor is not None:

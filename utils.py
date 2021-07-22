@@ -1,7 +1,7 @@
 import sqlite3
 from sqlite3 import Error
 
-database = r"/home/patel60/qa_tests/QA Checks/Channel.db"
+database = r"C:\qa_tests\QA Checks\Python_QA_checks\Channel.db"
 
 class utils:
 

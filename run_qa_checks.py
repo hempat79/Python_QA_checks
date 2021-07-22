@@ -1,6 +1,8 @@
 import utils
 from sqlite3 import Error
 import pandas as pd
+from pandasgui import show
+
 
 def replace_table_parameters(rows, environment, date):
     run_sql_list = []
@@ -62,11 +64,13 @@ def main():
         sqlrows = db.select_all_rows(sql_query)
         test_sql= replace_table_parameters(sqlrows, 'dev', '\'30/03/2021\'')               
         test_result = run_test_sql(db.connection, test_sql)
-        generate_output_frame(sqlrows, test_result)
+        
         db.close_connection()
     else:
         print("Error! cannot create the database connection.")
 
+    qa_output = generate_output_frame(sqlrows, test_result)
+    show(qa_output)
 
 if __name__ == '__main__':
     main()    
