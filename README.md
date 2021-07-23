@@ -6,7 +6,7 @@ This MVP demos the "QA Checks" exercise that will connect to a local SQLite data
 It will output the results in a GUI.
 
 #### Database: 
-Uses sqlite as the database (Channel.db), included in the application. There is few rows of sample data for demo purposes.
+Uses sqlite as the database (Channel.db), included in the application. There are few rows of sample data for demo purposes.
 
 #### Scripts:
 1. To create/re-create the tables and infrastructure, run the "create_db.py" that will create the Channel.db file.
@@ -17,7 +17,7 @@ Uses sqlite as the database (Channel.db), included in the application. There is 
 The main dependencies include:
 
 - Python: Pandas , PandasGUI. Please install using the pip install command in your local python folder.
-- SQLite3: Download this and install locally on windows and add the path to windows envionment variable.
+- SQLite3: Download this and install locally on windows and add the path to windows environment variable.
 
 #### Application Execution Environment:
 This application was designed to run on Windows machine.
